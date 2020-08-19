@@ -1,0 +1,217 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 11;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav .left-menu {
+  display: flex;
+  font-size: 15px;
+}
+
+.left-menu .left-item {
+  padding: 30px 10px;
+}
+.left-item:nth-child(1) {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.left-item i {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  text-indent: 9999px;
+
+  background-image: url("https://www.carlogos.org/logo/Maserati-logo-black-1920x1080.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav .right-menu {
+  display: flex;
+  font-size: 14px;
+}
+.right-menu .right-item {
+  padding: 30px 0;
+  width: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-menu:nth-child(1) {
+  background: #e5e5e5;
+}
+.right-item:nth-child(2) {
+  background: navy;
+  color: white;
+}
+
+.right-menu i {
+  font-size: 25px;
+}
+
+.car {
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  background: #fff;
+  transition: all 1s ease;
+}
+.car ul {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.car li {
+  height: 60%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid gray;
+  margin: auto 0;
+  box-sizing: border-box;
+}
+.car h1 {
+  font-weight: bold;
+}
+.car img {
+  height: 55%;
+  margin: 20px 0;
+}
+.car button {
+  background: navy;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+.left-item:nth-child(2):hover .car {
+  display: flex;
+  height: 300px;
+  width: auto;
+
+  opacity: 1;
+}
+
+.banner {
+  background-image: url("./banner.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  position: relative;
+  color: white;
+  margin-top: 70px;
+}
+.banner .summary {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.banner h1 {
+  font-size: 40px;
+  padding-right: 10px;
+  margin: 20px;
+  border-right: 1px solid #fff;
+}
+.banner p {
+}
+
+.banner button {
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  bottom: 30px;
+  right: 50px;
+  font-size: 16px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.model {
+}
+.model .model-title {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  background: #e5e5e5;
+}
+.model-title strong {
+  font-size: 50px;
+  margin: 0 30px;
+}
+
+.model-title span {
+  font-size: 22px;
+}
+
+.cars {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.cars .cars-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cars-item h1 {
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.cars-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cars-item img {
+  margin: 50px 0;
+}
+
+.cars-item button {
+  width: 150px;
+  height: 45px;
+  font-size: 18px;
+  outline: none;
+  background: white;
+  border: 1px solid navy;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.more-btn:nth-child(2n) {
+  background: navy;
+  color: white;
+}
